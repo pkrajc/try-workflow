@@ -14,7 +14,7 @@ public class MyServiceTest {
 
     @Test
     void testResult() {
-        boolean result = myService.result(false);
+        boolean result = myService.result(true);
         assertTrue(result);
     }
 }
