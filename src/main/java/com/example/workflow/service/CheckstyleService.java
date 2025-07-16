@@ -7,6 +7,7 @@ public class CheckstyleService {
     private int age;
     private static final String EXPERTISE = "Backend Development";
     private static String myStatus = "single";
+    char Word;
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
