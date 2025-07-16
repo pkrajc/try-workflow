@@ -19,5 +19,12 @@
         <module name="LocalVariableName"/>
         <module name="PackageName"/>
         <module name="StaticVariableName"/>
+
+        <!-- Imports -->
+        <module name="RedundantImport"/>
+        <module name="UnusedImports"/>
+
+        <!-- Block Checks -->
+        <module name="NeedBraces"/>
     </module>
 </module>
