@@ -42,4 +42,21 @@ public class MyControllerTest {
                     assertTrue((boolean) response.get("result"));
                 });
     }
+
+    @Test
+    void testFirst() throws Exception {
+        mockMvc.perform(get("/first").accept(MediaType.ALL))
+                .andExpect(status().isOk())
+                .andDo(result -> {
+                    Map<String, Object> response = objectMapper.readValue(
+                            result.getResponse().getContentAsString(),
+                            new TypeReference<Map<String, Object>>() {
+                            });
+
+                    assertNotNull(response);
+                    assertNotNull(response.get("id"));
+                    assertNotNull(response.get("name"));
+                    assertNotNull(response.get("quantity"));
+                });
+    }
 }
