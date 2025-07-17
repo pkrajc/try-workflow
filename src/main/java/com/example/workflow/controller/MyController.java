@@ -24,4 +24,9 @@ public class MyController {
         return ResponseEntity.ok().body(Map.of("result", result));
     }
 
+    @GetMapping("/first")
+    public ResponseEntity<Map<String, Object>> first(@RequestParam(required = false) String param) {
+        return ResponseEntity.ok().body(myService.findFirst());
+    }
+
 }
