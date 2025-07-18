@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Configuration;
 public class DataConfig {
     @Bean
     public CommandLineRunner testConnection(DataSource dataSource) {
-        System.out.println("MS_SQL_USERNAME: " + System.getenv("MS_SQL_USERNAME"));
         return args -> {
             try (Connection conn = dataSource.getConnection()) {
                 System.out.println("Database connection successful: " + !conn.isClosed());
