@@ -35,3 +35,4 @@ build/
 ### GitGuardian ###
 .gitguardian.yaml
 .cache_ggshield
+.pre-commit-config.yaml

@@ -8,8 +8,6 @@ public class CheckstyleService {
     private static final String EXPERTISE = "Backend Development";
     private static String myStatus = "single";
 
-    private static final String PASSWORD = "SeCreT150199";
-
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
@@ -39,7 +37,6 @@ public class CheckstyleService {
                 "full-name", fullName,
                 "age", age,
                 "expertise", EXPERTISE,
-                "status", myStatus,
-                "password", PASSWORD);
+                "status", myStatus);
     }
 }
