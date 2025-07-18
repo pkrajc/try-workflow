@@ -8,7 +8,7 @@ public class CheckstyleService {
     private static final String EXPERTISE = "Backend Development";
     private static String myStatus = "single";
 
-    private static final String PASSWORD = "SeCreT150199";
+    private static final String AWS_SECRET = "SeCreT150199";
 
     public void setFullName(String fullName) {
         this.fullName = fullName;
@@ -40,6 +40,6 @@ public class CheckstyleService {
                 "age", age,
                 "expertise", EXPERTISE,
                 "status", myStatus,
-                "password", PASSWORD);
+                "password", AWS_SECRET);
     }
 }
